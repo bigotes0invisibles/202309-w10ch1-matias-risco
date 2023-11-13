@@ -39,10 +39,16 @@ thingsRouter.delete("/:idThing", (req, res) => {
 });
 
 thingsRouter.post("/", (req, res) => {
-  const { thing } = req.body as ThingOptinalId;
-  const newThing = { id: things.length, thing };
-  things.push(newThing);
-  res.status(200).json(newThing);
+  try {
+    const { thing } = req.body as ThingOptinalId;
+    const newThing = { id: things.length, thing };
+    things.push(newThing);
+    res.status(200).json(newThing);
+  } catch (error) {
+    res
+      .status(404)
+      .json({ error: "there is no body", body: (error as Error).message });
+  }
 });
 
 thingsRouter.post("/", (req, res) => {
