@@ -14,8 +14,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "rules": {},
-  "error": {
-    "capIsNewExceptions": ["Router"]
+  "rules": {
+    "no-implicit-coercion": "off"
   }
 }
