@@ -1,6 +1,6 @@
 import morgan from "morgan";
-import app from "./app";
-import { notFound } from "./middleware/error/errorMiddleware";
+import app from "./app.js";
+import { notFound } from "./middleware/error/errorMiddleware.js";
 
 app.use(morgan("dev"));
 
