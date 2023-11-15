@@ -10,6 +10,8 @@
     "start:dev": "node --watch .",
     "build": "tsc --project tsconfig.build.json",
     "build:dev": "tsc --project tsconfig.build.json -w",
+    "test": "jest",
+    "test:dev": "jest --watchAll",
     "prepare": "husky install"
   },
   "keywords": [],
