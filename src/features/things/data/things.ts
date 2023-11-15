@@ -1,4 +1,4 @@
-import type { Thing } from "../../../types";
+import type { Thing } from "../types";
 
 const things: Thing[] = [
   {
