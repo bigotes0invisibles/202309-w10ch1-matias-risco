@@ -8,8 +8,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "start": "node .",
     "start:dev": "node --watch .",
-    "build": "tsc",
-    "build:dev": "tsc -w",
+    "build": "tsc --project tsconfig.build.json",
+    "build:dev": "tsc --project tsconfig.build.json -w",
     "prepare": "husky install"
   },
   "keywords": [],
