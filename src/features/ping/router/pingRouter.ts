@@ -5,6 +5,6 @@ const pingController = new PingController();
 
 const pingRouter = Router();
 
-pingRouter.use(pingController.getPing);
+pingRouter.all("/", pingController.getPing);
 
 export default pingRouter;
